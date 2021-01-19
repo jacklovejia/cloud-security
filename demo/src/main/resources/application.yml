@@ -1,0 +1,17 @@
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:11000/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 5
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+remoteTokenServices: http://localhost:8080/oauth/check_token
+clientId: c1
+clientSecret: secret
+spring:
+  application:
+    name: demo
