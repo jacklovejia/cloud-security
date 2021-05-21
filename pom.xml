@@ -10,6 +10,8 @@
     <modules>
         <module>oauth</module>
         <module>demo</module>
+        <module>jwt</module>
+        <module>shriojwt</module>
     </modules>
     <packaging>pom</packaging>
 
